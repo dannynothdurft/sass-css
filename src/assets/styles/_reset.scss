@@ -1,0 +1,196 @@
+/* Box-Sizing und Reset für alle Elemente */
+*,
+*::before,
+*::after {
+    vertical-align: baseline;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Basis HTML Elemente */
+html {
+    scroll-padding-top: var(--space-3xl, 0);
+    text-rendering: optimizeLegibility;
+    font-size: var(--text-base); // Basis-Schriftgröße
+    overflow-x: hidden;
+    height: 100%;
+
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+  }
+
+body {
+  font-family: var(--font-family-base);
+  line-height: var(--leading-normal);
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  scroll-behavior: smooth;
+  min-height: 100svh;
+  text-size-adjust: 100%;
+  position: relative;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  touch-action: manipulation;
+
+  -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-bold);
+}
+
+p {
+  margin: var(--paragraph-spacing);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    
+    &:active,
+    &:hover {
+      outline: 0;
+    }
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  touch-action: manipulation;
+
+  -webkit-tap-highlight-color: transparent;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: var(--disabled-opacity);
+  }
+}
+
+/* Formulare */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  &:focus {
+    outline: none;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    opacity: var(--disabled-opacity);
+  }
+}
+
+/* Verbesserte Formular-Resets */
+input {
+  &[type="search"] {
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+      -webkit-appearance: none;
+    }
+  }
+  
+  &[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+  
+  &::-ms-clear,
+  &::-ms-reveal {
+    display: none;
+  }
+
+  &::placeholder {
+    color: var(--input-placeholder-color);
+    opacity: 1;
+  }
+}
+
+/* Textarea Verbesserungen */
+textarea {
+  resize: vertical;
+  overflow: auto;
+  vertical-align: top;
+  min-height: 2.5em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+}
+
+blockquote {
+  quotes: none;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-gray-300);
+  margin: var(--space-md) 0;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  display: none; // Versteckt das legend-Element
+}
+
+address {
+  font-style: normal; // Entfernt die Standard-Kursivschrift
+}
+
+mark {
+  background-color: var(--color-primary-light); // Markierungshintergrund
+  color: var(--color-primary);
+}
+
+sup, sub {
+  font-size: 0.75em; // Kleinere Schriftgröße für hoch- und tiefgestellte Zeichen
+}
+
+code {
+  font-family: monospace; // Monospace-Schriftart für Code
+}

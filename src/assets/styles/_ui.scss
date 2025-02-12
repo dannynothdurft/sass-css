@@ -1,0 +1,67 @@
+// Button-Stile
+.btn {
+    background-color: var(--button-primary-bg);
+    color: var(--color-white);
+    border: none;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: var(--transition-base);
+
+    &:hover {
+        background-color: var(--button-primary-hover);
+    }
+}
+
+// Akkordeon-Stile
+.accordion {
+    border: var(--border-width-thin) solid var(--border-color);
+    border-radius: var(--radius-md);
+
+    .accordion-header {
+        padding: var(--space-md);
+        cursor: pointer;
+        background-color: var(--bg-secondary);
+
+        &:hover {
+            background-color: var(--color-gray-200);
+        }
+    }
+
+    .accordion-content {
+        padding: var(--space-md);
+        display: none; // Standardmäßig versteckt
+    }
+}
+
+// Eingabefeld-Stile
+.input-field {
+    border: var(--input-border-width) solid var(--input-border-color);
+    border-radius: var(--radius-md);
+    padding: var(--space-sm);
+    width: 100%;
+
+    &:focus {
+        border-color: var(--input-border-color-focus);
+        outline: none;
+        box-shadow: var(--input-focus-ring);
+    }
+}
+
+// Formular-Stile
+.form {
+    display: flex;
+    flex-direction: column;
+
+    .form-group {
+        margin-bottom: var(--form-gap);
+    }
+}
+
+// Karten-Stile
+.card {
+    border: var(--border-width-thin) solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    background-color: var(--surface-primary);
+}
