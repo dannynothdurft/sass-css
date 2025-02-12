@@ -1,18 +1,19 @@
-import type { Metadata } from "next";
+import '@/assets/styles/main.scss'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "SCSS / CSS",
-  description: "Syteles",
-};
+  title: 'SCSS / CSS',
+  description: 'Syteles',
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="de">
       <body>{children}</body>
     </html>
-  );
+  )
 }
