@@ -125,3 +125,63 @@ Diese Dokumentation beschreibt die CSS-Variablen, die im `:root`-Block definiert
 ## Verwendung
 
 Diese Variablen können in deinem CSS verwendet werden, um ein konsistentes Design zu gewährleisten. Beispiel:
+
+# UI Styles Dokumentation
+
+Diese Dokumentation beschreibt die Stile, die in der Datei `_ui.scss` definiert sind. Diese Stile sind Teil des Design-Systems und sorgen für ein konsistentes Erscheinungsbild der Benutzeroberfläche.
+
+## Button-Stile
+
+Die `.btn`-Klasse definiert die grundlegenden Stile für Schaltflächen:
+
+- `.btn-primary`: Stile für primäre Schaltflächen.
+
+  - Hintergrundfarbe: `--color-primary`
+  - Hover-Zustand: `--color-primary-dark`
+  - Active-Zustand: `--color-primary-light`
+
+- `.btn-secondary`: Stile für sekundäre Schaltflächen.
+
+  - Hintergrundfarbe: `--color-secondary`
+  - Hover-Zustand: `--color-secondary-dark`
+  - Active-Zustand: `--color-secondary-light`
+
+- `.btn-link`: Stile für Link-Schaltflächen.
+
+  - Farbe: `--color-primary`
+  - Hover-Zustand: `--color-primary-dark`
+  - Active-Zustand: `--color-primary-light`
+
+- `.btn-sm`: Kleinere Schaltflächen mit reduziertem Padding und Schriftgröße.
+- `.btn-lg`: Größere Schaltflächen mit erhöhtem Padding und Schriftgröße.
+- `.btn-block`: Schaltflächen, die die volle Breite des Containers einnehmen.
+
+## Akkordeon-Stile
+
+Die `.accordion`-Klasse definiert die Stile für Akkordeon-Elemente:
+
+- `.accordion-header`: Stile für den Kopf des Akkordeons.
+- `.accordion-content`: Stile für den Inhalt des Akkordeons, standardmäßig versteckt.
+
+## Eingabefeld-Stile
+
+Die `.input-field`-Klasse definiert die Stile für Eingabefelder:
+
+- Fokuszustand: Ändert die Rahmenfarbe und fügt einen Schatten hinzu.
+
+## Formular-Stile
+
+Die `.form`-Klasse definiert die Stile für Formulare:
+
+- `.form-group`: Stile für Gruppen von Formularelementen.
+
+## Karten-Stile
+
+Die `.card`-Klasse definiert die Stile für Karten:
+
+- Hintergrundfarbe: `--surface-primary`
+- Rahmen und Padding für die Karten.
+
+## Verwendung
+
+Diese Stile können in deinem HTML verwendet werden, um ein konsistentes Design zu gewährleisten. Beispiel:

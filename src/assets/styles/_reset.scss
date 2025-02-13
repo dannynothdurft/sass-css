@@ -2,27 +2,27 @@
 *,
 *::before,
 *::after {
-    vertical-align: baseline;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
 
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Basis HTML Elemente */
 html {
-    scroll-padding-top: var(--space-3xl, 0);
-    text-rendering: optimizeLegibility;
-    font-size: var(--text-base); // Basis-Schriftgröße
-    overflow-x: hidden;
-    height: 100%;
+  scroll-padding-top: var(--space-3xl, 0);
+  text-rendering: optimizeLegibility;
+  font-size: var(--text-base); // Basis-Schriftgröße
+  overflow-x: hidden;
+  height: 100%;
 
-    -webkit-tap-highlight-color: transparent;
-    -webkit-text-size-adjust: 100%;
-  }
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
 
 body {
   font-family: var(--font-family-base);
@@ -42,7 +42,12 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: var(--font-bold);
 }
 
@@ -51,18 +56,19 @@ p {
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    -webkit-tap-highlight-color: transparent;
-    touch-action: manipulation;
-    
-    &:active,
-    &:hover {
-      outline: 0;
-    }
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+
+  &:active,
+  &:hover {
+    outline: 0;
+  }
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -74,8 +80,9 @@ button {
   background: none;
   color: inherit;
   line-height: inherit;
-  text-align: inherit;
+  text-align: center;
   touch-action: manipulation;
+  text-decoration: none;
 
   -webkit-tap-highlight-color: transparent;
 
@@ -108,7 +115,7 @@ select {
 
 /* Verbesserte Formular-Resets */
 input {
-  &[type="search"] {
+  &[type='search'] {
     &::-webkit-search-decoration,
     &::-webkit-search-cancel-button,
     &::-webkit-search-results-button,
@@ -116,8 +123,8 @@ input {
       -webkit-appearance: none;
     }
   }
-  
-  &[type="number"] {
+
+  &[type='number'] {
     -moz-appearance: textfield;
     appearance: textfield;
     &::-webkit-outer-spin-button,
@@ -125,7 +132,7 @@ input {
       -webkit-appearance: none;
     }
   }
-  
+
   &::-ms-clear,
   &::-ms-reveal {
     display: none;
@@ -156,7 +163,8 @@ table {
   width: 100%;
 }
 
-th, td {
+th,
+td {
   text-align: left;
 }
 
@@ -187,7 +195,8 @@ mark {
   color: var(--color-primary);
 }
 
-sup, sub {
+sup,
+sub {
   font-size: 0.75em; // Kleinere Schriftgröße für hoch- und tiefgestellte Zeichen
 }
 
